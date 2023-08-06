@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Vue.js script tagi orqali shunday ulanadi -->
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="wrapper">
+        <div class="todo">
+          <h3 class="appName">Todo List App</h3>
+          <div class="addInput">
+            <input
+              type="text"
+              id="input"
+              class="input"
+              v-model="enteredValue"
+            />
+            <button class="button" @click="addTodo">Add</button>
+          </div>
+          <ul class="items">
+            <li class="item" v-for="item in items">{{item}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- bu darsda todo list yasalgan -->
+    <script src="./main.js"></script>
+  </body>
+</html>

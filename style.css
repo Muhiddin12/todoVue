@@ -1,0 +1,81 @@
+body {
+  background: #a1e375;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 480px;
+  overflow-y: hidden;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+.todo {
+  max-width: 460px;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 12px;
+}
+
+.appName {
+  font-size: 25px;
+  color: green;
+  text-align: center;
+  margin: 14px 0;
+}
+
+.input {
+  width: 76%;
+  height: 20px;
+  color: green;
+  letter-spacing: 1px;
+  border: 2px solid green;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.addInput {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.button {
+  background: green;
+  font-size: 17px;
+  width: 20%;
+  height: 28px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.items {
+  padding: 0 5px;
+  overflow-y: auto;
+  max-height: 420px;
+}
+
+.items::-webkit-scrollbar {
+  width: 0;
+}
+
+.item {
+  box-shadow: 0 0 3px green;
+  height: 20px;
+  color: green;
+  font-size: 15px;
+  margin: 15px auto;
+  display: flex;
+  padding: 7px;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.item:hover {
+  background: rgb(240, 240, 240);
+}
