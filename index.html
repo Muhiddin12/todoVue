@@ -12,7 +12,7 @@
     <div id="app">
       <div class="wrapper">
         <div class="todo">
-          <h3 class="appName">Todo List App</h3>
+          <h3 class="appName">Vue Todo App</h3>
           <div class="addInput">
             <input
               type="text"
@@ -25,6 +25,9 @@
           <ul class="items">
             <li class="item" v-for="item in items">{{item}}</li>
           </ul>
+          <div class="clearList">
+            <button @click="clearList">Clear</button>
+          </div>
         </div>
       </div>
     </div>

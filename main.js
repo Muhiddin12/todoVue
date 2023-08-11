@@ -15,6 +15,9 @@ const app = Vue.createApp({
         this.enteredValue = "";
       }
     },
+    clearList() {
+      this.items = [];
+    },
   },
 });
 
